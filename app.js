@@ -86,25 +86,6 @@ function getQuote() {
 	author.innerHTML = text[number].author; 
 }
 
-document.author.style.color = 'green';
-
-
-
-
-// Contact Form
-
-function getValue() {
-let n1 = document.getElementById('n1');
-let n2 = document.getElementById('n2'); 
-
-
-	if (n1.value != "" && n2.value != "" ) {
-		if (n1.value == n2.value) {
-			return true;
-		}
-	}
-	alert('hello'); 
-}
 
 
 
