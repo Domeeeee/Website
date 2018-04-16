@@ -1,6 +1,9 @@
 //Background color
 
 
+window.onload = function () {
+
+
 // variables 
 //
 window.onload = function() { 
@@ -79,6 +82,7 @@ let btnNext = document.getElementById('btnNext');
 let author = document.getElementById('author'); 
 let country = document.getElementById('country'); 
 let pic = document.getElementById('pic'); 
+
 // Event Listener
 //
 
@@ -95,6 +99,19 @@ function getQuote() {
 	author.innerHTML = text[number].author; 
 }
 
+//Change back img
+
+function changeImg () {
+	let img = [
+		"../../Bilder/asphalt.jpg",
+		"../../Bilder/snowing.jpeg",
+		"../../Bilder/black-snow.jpg",
+		"../../Bilder/iphone.jpeg"
+	]; 
+	let i = Math.floor((Math.random() * 4));
+	document.getElementById('clients').style.backgroundImage = 'url("' + img[i] + '")';   
+}
+window.setInterval(changeImg, 5000);
 
 
 
@@ -141,5 +158,4 @@ function getQuote() {
 
 
 
-
-
+}
