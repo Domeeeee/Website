@@ -494,13 +494,16 @@ nav a:hover::before {
 	font-size: 14pt; 
 }
 
-#span-author {
+#author {
 	color: #55d6aa;
 	font-size: 14pt;
 }
 
 #country {
 	font-size: 11pt;
+	position: absolute;
+	top: 25%;
+	left: 26%; 
 }
 
 /* stay in touch starts */
