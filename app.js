@@ -1,10 +1,5 @@
-//Background color
-
-
-
-
 // variables 
-//
+
 window.onload = function() { 
 let btn = document.getElementById('btn'); 
 const colors = [
