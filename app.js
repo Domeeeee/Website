@@ -1,7 +1,6 @@
 //Background color
 
 
-window.onload = function () {
 
 
 // variables 
@@ -28,8 +27,8 @@ function getColor() {
 	backgroundSection.style.backgroundColor = color;
 
 }
-}
 
+}
 
 
 
@@ -82,6 +81,7 @@ let btnNext = document.getElementById('btnNext');
 let author = document.getElementById('author'); 
 let country = document.getElementById('country'); 
 let pic = document.getElementById('pic'); 
+let clients = document.getElementById('clients'); 
 
 // Event Listener
 //
@@ -102,60 +102,31 @@ function getQuote() {
 //Change back img
 
 function changeImg () {
-	let img = [
+	const img = [
 		"../../Bilder/asphalt.jpg",
-		"../../Bilder/snowing.jpeg",
-		"../../Bilder/black-snow.jpg",
+		"../../Bilder/notiz.jpg",
 		"../../Bilder/iphone.jpeg"
+		
+		
+		
 	]; 
-	let i = Math.floor((Math.random() * 4));
+	let i = Math.floor(Math.random() * 3);
 	document.getElementById('clients').style.backgroundImage = 'url("' + img[i] + '")';   
-}
-window.setInterval(changeImg, 5000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
+setInterval(changeImg, 3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
