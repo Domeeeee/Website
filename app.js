@@ -94,13 +94,16 @@ function getQuote() {
 	author.innerHTML = text[number].author; 
 }
 
+
+
+
 //Change back img
 
 function changeImg () {
 	const img = [
-		"../../Bilder/asphalt.jpg",
-		"../../Bilder/notiz.jpg",
-		"../../Bilder/iphone.jpeg"
+		"https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&h=350",
+		"https://images.pexels.com/photos/972990/pexels-photo-972990.jpeg?auto=compress&cs=tinysrgb&h=350",
+		"https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&h=350"
 		
 		
 		
@@ -110,6 +113,13 @@ function changeImg () {
 
 }
 setInterval(changeImg, 3000);
+
+
+
+
+
+
+
 
 
 
